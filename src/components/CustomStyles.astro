@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/inter';
+import '@fontsource/arima';
 
 // 'DM Sans'
 // Nunito
@@ -20,21 +20,28 @@ import '@fontsource-variable/inter';
 ---
 
 <style is:inline>
+  @font-face {
+    font-family: 'CaviarDreams';
+    src: url('/fonts/caviar-dreams/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'CaviarDreams';
+    --aw-font-serif: 'CaviarDreams';
+    --aw-font-heading: 'Arima';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: #ee703d;
+    --aw-color-secondary: #00865e;
+    --aw-color-accent: #fad44f;
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-text-heading: #314e52;
+    --aw-color-text-default: #00865e;
+    --aw-color-text-muted: #b48053;
+    --aw-color-bg-page: #f6f2e5;
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    --aw-color-bg-page-dark: #314e52;
 
     ::selection {
       background-color: lavender;
@@ -42,18 +49,18 @@ import '@fontsource-variable/inter';
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'CaviarDreams';
+    --aw-font-serif: 'CaviarDreams';
+    --aw-font-heading: 'Arima';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: #ee703d;
+    --aw-color-secondary: #00865e;
+    --aw-color-accent: #fad44f;
 
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-heading: #f6f2e5;
+    --aw-color-text-default: #dbb38f;
+    --aw-color-text-muted: #00865e;
+    --aw-color-bg-page: #314e52;
 
     ::selection {
       background-color: black;

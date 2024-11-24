@@ -1,40 +1,36 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: 'Psicopedagoga Tamara Chinarelli'
+  site: 'https://psicotamarachinarelli.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: false
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 'Psicopedagoga Tamara Chinarelli'
+    template: '%s — Especialista em Neurociência Aplicada à Educação e Transtornos do Neurodesenvolvimento'
+  description: "Tamara Chinarelli é psicopedagoga especializada em neurociência aplicada à educação e transtornos do neurodesenvolvimento, oferecendo intervenções personalizadas como estimulação precoce, atendimento para adolescentes, palestras e orientação parental. Consultório em Ribeirão Preto e atendimentos online."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: 'Psicopedagoga Tamara Chinarelli'
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/tamara-on-desk.png'
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
 
 i18n:
-  language: en
+  language: pt-br
   textDirection: ltr
 
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 6
+    postsPerPage: 2
 
     post:
       isEnabled: true
@@ -66,7 +62,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: "G-9N9LCQ5DH9"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
