@@ -28,12 +28,14 @@
     "@astrolib/seo": "^1.0.0-beta.8",
     "@fontsource-variable/inter": "^5.1.0",
     "@fontsource/arima": "^5.1.0",
+    "@jop-software/astro-cookieconsent": "^3.0.1",
     "astro": "^4.16.2",
     "astro-embed": "^0.7.4",
     "astro-icon": "^1.1.1",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
-    "unpic": "^3.18.0"
+    "unpic": "^3.18.0",
+    "vanilla-cookieconsent": "^3.0.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
