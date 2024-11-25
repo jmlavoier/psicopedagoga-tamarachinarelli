@@ -102,7 +102,7 @@ export default defineConfig({
                         },
                         {
                             title: 'Informações Adicionais',
-                            description: 'Para mais detalhes sobre nossa política de cookies e suas opções, visite nossa <a href="#privacy-policy">Política de Privacidade</a>.'
+                            description: 'Para mais detalhes sobre nossa política de cookies e suas opções, visite nossa <a href="/privacy-policy">Política de Privacidade</a>.'
                         }
                     ]
                 }
