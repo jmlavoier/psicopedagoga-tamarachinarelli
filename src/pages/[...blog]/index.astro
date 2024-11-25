@@ -12,6 +12,7 @@ import { getStaticPathsBlogPost, blogPostRobots } from '~/utils/blog';
 import { findImage } from '~/utils/images';
 import type { MetaData } from '~/types';
 import RelatedPosts from '~/components/blog/RelatedPosts.astro';
+import Header from '~/components/widgets/Header.astro';
 
 export const prerender = true;
 
@@ -46,9 +47,30 @@ const metadata = merge(
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Inicio', href: '/#hero' },
+        { text: 'Sobre', href: '/#about' },
+        { text: 'Serviços', href: '/#services' },
+        { text: 'Blog', href: '/#blog' },
+        { text: 'Contato', href: '/#contact' },
+      ]}
+      actions={[
+        {
+          text: 'Solicite uma avaliação',
+          href: 'https://wa.me/16997887592',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
   <SinglePost post={{ ...post, image: image }} url={url}>
     {post.Content ? <post.Content /> : <Fragment set:html={post.content || ''} />}
   </SinglePost>
   <ToBlogLink />
   <RelatedPosts post={post} />
+  <Fragment slot="footer"> </Fragment>
 </Layout>
