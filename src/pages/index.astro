@@ -28,7 +28,7 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Tire suas dúvidas',
+          text: 'Agende uma consulta',
           href: 'https://wa.me/16997887592',
         },
       ]}
@@ -179,6 +179,7 @@ const metadata = {
         icon: 'tabler:brand-instagram',
       },
     ]}
+    link="https://maps.app.goo.gl/ANfkGzHYxkFo7f8k7"
     image={{
       src: '~/assets/images/maps.webp',
       alt: 'Maps point',
@@ -186,7 +187,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Endereço</h3>
-      Rua Otto Benz, 1253. Sala 308 - Nova Ribeirânia - Ribeirão Preto/SP Edifício Unique
+      <a href="https://maps.app.goo.gl/ANfkGzHYxkFo7f8k7">{`${SITE.address} ${SITE.city}`}</a>
     </Fragment>
 
     <Fragment slot="bg">
@@ -204,5 +205,5 @@ const metadata = {
                        Não perca as novidades e transforme conhecimento em ação para o futuro da sua família.
                `}
   />
-  <Fragment slot="footer"> </Fragment>
+  <Fragment slot="footer"></Fragment>
 </Layout>
