@@ -68,7 +68,7 @@ analytics:
   vendors:
     googleAnalytics:
       enabled: true
-      id: 'GTM-WTSWCPHH'
+      id: 'G-9N9LCQ5DH9'
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
