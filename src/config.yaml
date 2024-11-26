@@ -3,6 +3,11 @@ site:
   site: 'https://psicotamarachinarelli.com'
   base: '/'
   trailingSlash: false
+  phone: '(16) 99788-7592'
+  email: 'tamarachinarelli@gmail.com'
+  instagram: '@psicotamarachinarelli'
+  address: Rua Otto Benz, 1253. Sala 308 - Nova Ribeirânia - Edifício Unique
+  city: 'Ribeirão Preto/SP'
 
   googleSiteVerificationId: false
 

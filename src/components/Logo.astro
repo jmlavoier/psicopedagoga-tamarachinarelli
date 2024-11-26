@@ -1,9 +1,15 @@
 ---
-import { SITE } from 'astrowind:config';
+import Image from './common/Image.astro';
 ---
 
-<span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
->
-  {SITE?.name}
-</span>
+<Image
+  id="logo-vertical"
+  src="~/assets/images/logo-vertical.webp"
+  alt="Logotipo vertical"
+  class="mx-auto rounded-md w-full transition-opacity ease-in-out hidden"
+  widths={[400, 768, 1024, 2040]}
+  sizes="(max-width: 767px) 185px, (max-width: 1023px) 185px, (max-width: 2039px) 185px, 185px"
+  loading="eager"
+  width={800}
+  height={185}
+/>

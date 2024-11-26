@@ -7,6 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
   title: 'Psicopedagoga — Tamara Chinarelli',
@@ -37,7 +38,11 @@ const metadata = {
   </Fragment>
   <!-- Hero Widget ******************* -->
 
-  <Hero actions={[]} image={{ src: '~/assets/images/logo.webp', alt: 'Logo Psicopedagoga Tamara Chinarelli' }}>
+  <Hero
+    id="hero"
+    actions={[]}
+    image={{ src: '~/assets/images/logo.webp', alt: 'Logo Psicopedagoga Tamara Chinarelli' }}
+  >
     <Fragment slot="title">Tamara Chinarelli</Fragment>
 
     <Fragment slot="subtitle">PSICOPEDAGOGA</Fragment>
@@ -50,6 +55,7 @@ const metadata = {
     isReversed
     tagline="Sobre mim"
     title="Experiência, dedicação e transformação na educação"
+    hasIcon={false}
     items={[
       {
         title: 'Missão',
@@ -65,8 +71,22 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      Tenho 14 anos de experiência na área educacional, sou pedagoga e psicopedagoga especializada em neurociência
-      aplicada à educação e pós-graduanda em transtorno do neurodesenvolvimento.
+      <p class="text-justify mb-5">
+        Com 14 anos de experiência na área educacional, sou <span class="font-bold">Pedagoga</span> e <span
+          class="font-bold">Psicopedagoga</span
+        >, especializada em <span class="font-bold">Neurociência Aplicada à Educação</span>, onde aprofundo meu
+        conhecimento sobre como o cérebro de crianças e adolescentes aprende. Graduanda em <span class="font-bold"
+          >Transtornos do Neurodesenvolvimento</span
+        >, com foco em compreender e intervir em condições como TDAH, dislexia, discalculia, disortografia, entre
+        outros.
+      </p>
+
+      <p class="text-justify">
+        Além dos atendimentos psicopedagógicos, desenvolvo um trabalho específico voltado para adolescentes em
+        preparação para o vestibular, focado na organização de uma rotina de estudos personalizada, no manejo da
+        ansiedade e no enfrentamento dos desafios dessa fase, proporcionando a eles uma trajetória mais leve,
+        estruturada e voltada para o sucesso acadêmico e emocional.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,7 +165,7 @@ const metadata = {
     items={[
       {
         title: 'Fone/Whatsapp',
-        description: '(16) 99788-7592',
+        description: SITE?.phone,
         icon: 'tabler:phone',
       },
       {
