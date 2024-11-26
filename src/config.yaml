@@ -3,6 +3,7 @@ site:
   site: 'https://psicotamarachinarelli.com'
   base: '/'
   trailingSlash: false
+  phone: '(16) 997880-7592'
 
   googleSiteVerificationId: false
 

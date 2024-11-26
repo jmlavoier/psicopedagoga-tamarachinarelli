@@ -22,6 +22,7 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render('bg'),
+  hasIcon = true,
 } = Astro.props;
 ---
 
@@ -57,7 +58,7 @@ const {
         <ItemGrid
           items={items}
           columns={columns}
-          defaultIcon="tabler:check"
+          defaultIcon={hasIcon ? 'tabler:check' : ''}
           classes={{
             container: `gap-y-4 md:gap-y-8`,
             panel: 'max-w-none',

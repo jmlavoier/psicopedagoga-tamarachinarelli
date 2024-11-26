@@ -116,6 +116,48 @@ import { UI } from 'astrowind:config';
       document.querySelector('#header > div > div:last-child')?.classList.add('hidden');
     });
 
+    function tooggleLogoStylesOnScroll() {
+      const logo = document.getElementById('logo-vertical');
+      const phone = document.getElementById('phone');
+
+      const hidePhone = () => {
+        phone.classList.remove('opacity-100');
+        phone.classList.add('opacity-0');
+        setTimeout(() => {
+          phone.classList.add('hidden');
+          logo.classList.remove('hidden');
+          logo.classList.add('opacity-100');
+        }, 500);
+      };
+
+      const hideLogo = () => {
+        logo.classList.remove('opacity-100');
+        logo.classList.add('opacity-0');
+        setTimeout(() => {
+          logo.classList.add('hidden');
+          phone.classList.remove('hidden');
+          phone.classList.add('opacity-100');
+        }, 500);
+      };
+
+      const isShown = (el) => {
+        return !el.classList.contains('hidden');
+      };
+
+      const heroHeight = window.outerHeight;
+
+      if (lastKnownScrollPosition > heroHeight) {
+        if (isShown(phone)) {
+          hidePhone();
+        }
+      } else {
+        if (isShown(logo)) {
+          hideLogo();
+        }
+      }
+    }
+    tooggleLogoStylesOnScroll();
+
     function applyHeaderStylesOnScroll() {
       const header = document.querySelector('#header[data-aw-sticky-header]');
       if (!header) return;
@@ -134,6 +176,7 @@ import { UI } from 'astrowind:config';
       if (!ticking) {
         window.requestAnimationFrame(() => {
           applyHeaderStylesOnScroll();
+          tooggleLogoStylesOnScroll();
         });
         ticking = true;
       }
