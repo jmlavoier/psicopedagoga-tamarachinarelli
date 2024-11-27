@@ -70,13 +70,16 @@ const {
           }}
         />
       </div>
-      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
-        {
-          !link && image && (
-            <div class="relative m-auto max-w-4xl">
-              {typeof image === 'string' ? (
+
+      {
+        !link && image && (
+          <div class="relative m-auto max-w-4xl">
+            {typeof image === 'string' ? (
+              <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
                 <Fragment set:html={image} />
-              ) : (
+              </div>
+            ) : (
+              <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
                 <Image
                   class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
                   width={500}
@@ -86,16 +89,20 @@ const {
                   layout="responsive"
                   {...image}
                 />
-              )}
-            </div>
-          )
-        }
-        {
-          link && image && (
-            <div class="relative m-auto max-w-4xl">
-              {typeof image === 'string' ? (
+              </div>
+            )}
+          </div>
+        )
+      }
+      {
+        link && image && (
+          <div class="relative m-auto max-w-4xl">
+            {typeof image === 'string' ? (
+              <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
                 <Fragment set:html={image} />
-              ) : (
+              </div>
+            ) : (
+              <div class="mt-10 md:mt-0 md:basis-1/2">
                 <a href={link}>
                   <Image
                     class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
@@ -107,11 +114,11 @@ const {
                     {...image}
                   />
                 </a>
-              )}
-            </div>
-          )
-        }
-      </div>
+              </div>
+            )}
+          </div>
+        )
+      }
     </div>
   </div>
 </WidgetWrapper>
