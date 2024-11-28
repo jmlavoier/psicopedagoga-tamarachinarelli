@@ -135,33 +135,12 @@ const metadata = {
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Whatsapp',
-        href: 'https://wa.me/16997887592',
-        target: '_blank',
-        icon: 'tabler:brand-whatsapp',
-      },
-    ]}
-  >
-    <Fragment slot="title">Estou aqui para ajudar</Fragment>
-
-    <Fragment slot="subtitle">
-      Transforme as dificuldades de aprendizagem em conquistas! Entre em contato e descubra como a psicopedagogia pode
-      contribuir para o sucesso escolar e emocional.
-    </Fragment><Fragment slot="bg">
-      <div class="absolute inset-0 dark:bg-transparent"></div>
-    </Fragment>
-  </CallToAction>
-
   <!-- Steps Widget ****************** -->
 
   <Steps
+    id="approach"
     title="Como funciona o processo psicopedagógico"
+    tagline="Modo de trabalho"
     items={[
       {
         title: 'Passo 1: <span class="font-medium">Avaliação psicopedagógica</span>',
@@ -193,6 +172,60 @@ const metadata = {
       alt: 'Imagem passo a passo',
     }}
   />
+
+  <!-- Content Widget **************** -->
+
+  <Steps
+    isReversed
+    title="O que a psicopedagogia proporciona"
+    tagline="Benefícios"
+    items={[
+      {
+        icon: 'tabler:trophy',
+        title: 'Identificação precoce',
+        description:
+          'A detecção antecipada de problemas aumenta significativamente as chances de sucesso no desenvolvimento.',
+      },
+      {
+        icon: 'tabler:trophy',
+        title: 'Melhoria no desempenho escolar',
+        description: 'Intervenções direcionadas permitem um aprendizado mais eficiente.',
+      },
+      {
+        icon: 'tabler:trophy',
+        title: 'Integração social aprimorada',
+        description:
+          'A criança se sente mais preparada para interagir e colaborar com colegas e professores. Superando desafios e ajudando na contrução da autoestima e confiança.',
+      },
+    ]}
+    image={{
+      src: 'https://res.cloudinary.com/dkzcfwkpm/image/upload/v1732809366/beautiful-adorable-girl-celebrating-life_b0yqwt.jpg',
+      alt: 'Imagem criança vencendo',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Whatsapp',
+        href: 'https://wa.me/16997887592',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  >
+    <Fragment slot="title">Agende uma consulta</Fragment>
+
+    <Fragment slot="subtitle">
+      Entre em contato e descubra como a psicopedagogia pode contribuir para o sucesso escolar e emocional. Juntos vamos
+      transformar as dificuldades de aprendizagem em conquistas!
+    </Fragment><Fragment slot="bg">
+      <div class="absolute inset-0 dark:bg-transparent"></div>
+    </Fragment>
+  </CallToAction>
 
   <Content
     id="contact"
