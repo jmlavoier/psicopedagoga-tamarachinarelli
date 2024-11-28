@@ -49,7 +49,6 @@ Com os dados da avaliação, o psicopedagogo desenvolve um plano de intervençã
 As intervenções são realizadas em sessões individuais ou em grupo, de acordo com a necessidade, e podem incluir:
 
 - **Atividades direcionadas:** Foco em exercícios que estimulem áreas específicas do desenvolvimento.
-- **Superar bloqueios:** Estratégias para lidar com bloqueios emocionais e cognitivos.
 - **Orientação familiar:** Dicas e estratégias para que os pais apoiem o aprendizado em casa.
 
 ### 4. **Acompanhamento e reavaliação**
@@ -58,7 +57,7 @@ O progresso do aluno é continuamente monitorado, com ajustes no plano de interv
 
 ## Benefícios do trabalho do psicopedagogo
 
-- **Identificação precoce:** A detecção antecipada de problemas aumenta significativamente as chances de sucesso no tratamento.
+- **Identificação precoce:** A detecção antecipada de problemas aumenta significativamente as chances de sucesso no desenvolvimento.
 - **Melhoria no desempenho escolar:** Intervenções direcionadas permitem um aprendizado mais eficiente.
 - **Desenvolvimento emocional:** Superar desafios ajuda na construção da autoestima e confiança.
 - **Integração social aprimorada:** A criança se sente mais preparada para interagir e colaborar com colegas e professores.
