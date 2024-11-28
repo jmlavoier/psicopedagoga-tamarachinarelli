@@ -15,7 +15,7 @@ site:
 metadata:
   title:
     default: 'Psicopedagoga Tamara Chinarelli'
-    template: '%s — Especialista em Neurociência Aplicada à Educação e Transtornos do Neurodesenvolvimento'
+    template: '%s — Psicopedagoga Tamara Chinarelli'
   description: 'Tamara Chinarelli é psicopedagoga especializada em neurociência aplicada à educação e transtornos do neurodesenvolvimento, oferecendo intervenções personalizadas como estimulação precoce, atendimento para adolescentes, palestras e orientação parental. Consultório em Ribeirão Preto e atendimentos online.'
   robots:
     index: true
