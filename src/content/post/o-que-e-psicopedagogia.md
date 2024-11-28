@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-11-27T00:00:00Z
 author: Tamara Chinarelli
-title: O que é psicopedagogia
+title: O que é psicopedagogia?
 excerpt: Descubra como a psicopedagogia pode ser essencial para o sucesso escolar.
 image: https://res.cloudinary.com/dkzcfwkpm/image/upload/v1732760272/mother-spending-time-with-her-child_r6ytgm.jpg
 category: Educação

@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-11-24T00:00:00Z
 author: Tamara Chinarelli
-title: O que faz um psicopedagogo
+title: O que faz um psicopedagogo?
 excerpt: Entenda como o psicopedagogo pode auxiliar no desenvolvimento escolar e emocional das crianças.
 image: https://res.cloudinary.com/dkzcfwkpm/image/upload/c_crop,ar_4:3/v1732759601/1732479440563_zzlwuy.jpg
 category: Educação
