@@ -38,7 +38,7 @@ Sinais incluem dificuldades persistentes mesmo após reforço escolar, desempenh
 
 Avaliações psicopedagógicas ajudam a identificar as causas das dificuldades de aprendizagem, permitindo o desenvolvimento de estratégias personalizadas para superar esses desafios.
 
-## Como os pais podem audar?
+## Como os pais podem ajudar?
 
 Os pais podem criar um ambiente acolhedor em casa, estabelecer rotinas de estudo e buscar ajuda de especialistas para garantir uma intervenção adequada.
 
