@@ -44,7 +44,7 @@ Com os dados da avaliação, o psicopedagogo desenvolve um plano de intervençã
 - **Definição de objetivos:** Metas claras são estabelecidas com base nas necessidades do aluno.
 - **Ações práticas:** As sessões são planejadas com atividades lúdicas, exercícios específicos e orientações constantes para os pais ou responsáveis.
 
-### 3. **Intervenção isicopedagógica**
+### 3. **Intervenção psicopedagógica**
 
 As intervenções são realizadas em sessões individuais ou em grupo, de acordo com a necessidade, e podem incluir:
 

@@ -8,6 +8,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
 import { SITE } from 'astrowind:config';
+import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
   title: 'Psicopedagoga — Tamara Chinarelli',
@@ -156,6 +157,42 @@ const metadata = {
       <div class="absolute inset-0 dark:bg-transparent"></div>
     </Fragment>
   </CallToAction>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Como funciona o processo psicopedagógico"
+    items={[
+      {
+        title: 'Passo 1: <span class="font-medium">Avaliação psicopedagógica</span>',
+        description:
+          'A avaliação psicopedagógica começa com uma entrevista para entender o histórico da criança, seguida por testes que avaliam habilidades cognitivas e um relatório detalhado das dificuldades encontradas. <a class="text-xs text-primary font-bold text-nowrap" href="/o-que-faz-um-psicopedagogo/#1-avaliação-psicopedagógica">Saiba Mais >></a>',
+        icon: 'tabler:clipboard',
+      },
+      {
+        title: 'Passo 2: <span class="font-medium">Planejamento da intervenção</span>',
+        description:
+          'Após a avaliação, o psicopedagogo cria um plano de intervenção com metas claras e sessões que incluem atividades lúdicas, exercícios e orientações para os pais. <a class="text-xs text-primary font-bold text-nowrap" href="/o-que-faz-um-psicopedagogo/#2-planejamento-da-intervenção">Saiba Mais >></a>',
+        icon: 'tabler:calendar-event',
+      },
+      {
+        title: 'Passo 3: <span class="font-medium">Intervenção psicopedagógica</span>',
+        description:
+          'As intervenções psicopedagógicas podem ser individuais ou em grupo, focando em exercícios para desenvolvimento específico, estratégias contra bloqueios emocionais e cognitivos, e orientação para apoio familiar. <a class="text-xs text-primary font-bold text-nowrap" href="/o-que-faz-um-psicopedagogo/#3-intervenção-psicopedagógica">Saiba Mais >></a>',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Passo 4: <span class="font-medium">Acompanhamento e reavaliação</span>',
+        description:
+          'O progresso do aluno é continuamente monitorado, com ajustes no plano de intervenção conforme necessário para maximizar o desenvolvimento.',
+        icon: 'tabler:arrow-capsule',
+      },
+    ]}
+    image={{
+      src: 'https://res.cloudinary.com/dkzcfwkpm/image/upload/v1732805518/pexels-pixabay-434645_1_euurhz.png',
+      alt: 'Imagem passo a passo',
+    }}
+  />
 
   <Content
     id="contact"
