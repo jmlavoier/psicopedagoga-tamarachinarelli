@@ -16,6 +16,7 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
+import CookieConsent from '~/components/common/CookieConsent.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -44,5 +45,8 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
+    <div transition:persist="find-me-on-the-other-side" id="cc-container">
+      <CookieConsent />
+    </div>
   </body>
 </html>
