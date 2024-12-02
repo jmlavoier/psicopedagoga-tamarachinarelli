@@ -17,6 +17,7 @@ import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
 import CookieConsent from '~/components/common/CookieConsent.astro';
+import TagManager from '~/components/common/TagManager.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -48,5 +49,6 @@ const { language, textDirection } = I18N;
     <div transition:persist="find-me-on-the-other-side" id="cc-container">
       <CookieConsent />
     </div>
+    <TagManager />
   </body>
 </html>

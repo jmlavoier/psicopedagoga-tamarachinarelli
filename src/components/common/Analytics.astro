@@ -1,12 +1,13 @@
 ---
 import { ANALYTICS } from 'astrowind:config';
 
-const { id } = ANALYTICS.vendors.googleAnalytics;
+const { googleAnalytics, googleTagManager } = ANALYTICS.vendors;
 ---
 
-<script is:inline type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${id}`}></script>
+<script is:inline type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalytics.id}`}
+></script>
 
-<script is:inline define:vars={{ id }}>
+<script is:inline define:vars={{ id: googleAnalytics.id }}>
   window.dataLayer = window.dataLayer || [];
 
   window.gtag = function gtag() {
@@ -23,3 +24,15 @@ const { id } = ANALYTICS.vendors.googleAnalytics;
 
   gtag('config', id);
 </script>
+
+<!-- Google Tag Manager -->
+<script is:inline define:vars={{ id: googleTagManager.id }}>
+  window['dataLayer'] = window['dataLayer'] || [];
+  window['dataLayer'].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var f = document.getElementsByTagName('script')[0],
+    j = document.createElement('script');
+  j.async = true;
+  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + id;
+  f.parentNode.insertBefore(j, f);
+</script>
+<!-- End Google Tag Manager -->
